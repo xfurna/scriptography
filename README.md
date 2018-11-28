@@ -1,2 +1,2 @@
 # scriptography
-This repo contains scripts written for my personal use. If problem is relatable, you too can use them right away.
+This repo contains scripts written by me for my personal convenient usage. If problems are relatable, you too can use them right away.
