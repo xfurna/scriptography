@@ -2,10 +2,10 @@ from selenium import webdriver
 import targets
 from selenium.webdriver.common.keys import Keys
 
-a = webdriver.Chrome('D:\\projects\\webauto\\chromedriver.exe')
+a = webdriver.Chrome('CHROMEDRIVER.EXE COMPLETE PATH')
 a.get("https://web.whatsapp.com/")
 input()
-for i in range(45):
+for i in range(len(targets.this)):
     to = a.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/input')
     to.click()
     to.send_keys(targets.this[i])
