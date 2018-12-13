@@ -5,8 +5,8 @@ import targets
 import sys
 
 a = argparse.ArgumentParser()
-#If you've changed by default system settings to redirect downloads, then enable this statement and feed in the path you've established. Else let it be as it is as comment
-#a.add_argument("--PATH", "-p", help = "Complete path of latest release of chromedrive.exe in quotes")
+if len(sys.argv[1:]) == 3: 
+    a.add_argument("--PATH", "-p", help = "Complete path of latest release of chromedrive.exe in quotes")
 a.add_argument("--COUNT", "-c", help = "Number of targets that you want to feed in")
 a.add_argument("--MSG", "-m", help = "Your message in quotes")
 
