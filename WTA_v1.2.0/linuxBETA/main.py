@@ -5,7 +5,7 @@ import targets
 import sys
 
 a = argparse.ArgumentParser()
-if len(sys.argv[1:]) == 3: 
+if len(sys.argv[1:]) == 3:
     a.add_argument("--PATH", "-p", help = "Complete path of latest release of chromedrive.exe in quotes")
 a.add_argument("--COUNT", "-c", help = "Number of targets that you want to feed in")
 a.add_argument("--MSG", "-m", help = "Your message in quotes")

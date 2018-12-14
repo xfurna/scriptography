@@ -3,5 +3,5 @@ import targets
 
 class INSTALL:
     def Install():
-        sb.call(targets.cmnds[0], shell = True)
-        sb.call(targets.cmnds[1], shell = True)
+        for i in range(len(targets.cmnds)):
+            sb.call(targets.cmnds[i], shell = True)

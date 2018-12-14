@@ -32,7 +32,7 @@ If you're on linux, you should run [this](https://github.com/evi1haxor/scriptogr
 Now if you don't have default system settings for storing downloads, then you should specify the complete path (as illustrated below) where the downloads gets stored in your system. 
 
 ```bash
-py main.py -p "THE\\PATH" -c *** -m "THE MESSAGE"
+python3 main.py -p "THE\\PATH" -c *** -m "THE MESSAGE"
 ```
 
 
@@ -42,7 +42,7 @@ py main.py -p "THE\\PATH" -c *** -m "THE MESSAGE"
 If you've never touched your system settings, you can simply execute the command without `-p` flag ExampleGiven-
 
 ```bash
-py main.py -c *** -m "THE MESSAGE"
+python3 main.py -c *** -m "THE MESSAGE"
 ```
 
 **IF THE DESCRIBED WAY ISN'T MAKING YOU THROUGH, THEN YOU MAY WANT TO TRY WITH MANUAL SETUP AS EXPLAINED BELOW**
@@ -56,10 +56,10 @@ Windows guys have to do a little more manual work than linux ones.
 - Download [chromedriver](https://chromedriver.storage.googleapis.com/2.45/chromedriver_win32.zip)
 - Download [script directory](https://github.com/evi1haxor/scriptography/tree/master/WTA_v1.2.0/winBETA)
 - Open command line prompt in that downloaded folder
-- Execute following with usual meanings as explained above.
+- Execute following with usual meanings as explained above. Just put `wta` in place of `python3 main.py`
 
 ```bash
-py main.py -p "THE\\PATH" -c *** -m "THE MESSAGE"
+wta -p "THE\\PATH" -c *** -m "THE MESSAGE"
 ```
 
 

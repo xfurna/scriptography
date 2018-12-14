@@ -2,5 +2,5 @@ import subprocess as sb
 import targets
 
 def Install():
-    sb.call(targets.cmnds[0], shell = True)
-    
+    for i in range(len(targets.cmnds)):
+        sb.call(targets.cmnds[i], shell = True)
