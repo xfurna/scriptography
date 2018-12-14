@@ -13,7 +13,9 @@ For know-hows about the script,  do `py push.py --help` until I make a separate 
 
 Well, that's what I call it. Couldn't come up with a better name. Anyways, this script works with selenium and chrome webdriver. 
 
-## WTA_v1.0.0
+> 0.9 releases were made in gists. Which are no longer supported. 
+
+## WTA_v1.0
 
 For running it, you should have python3 and selenium installed and latest version of Chrome webdriver downloaded. 
 
@@ -23,11 +25,11 @@ For running it, you should have python3 and selenium installed and latest versio
 
 ---
 
-## WTA_v1.2.0
+## WTA_v2.0
 
-### linuxBETA
+### linux BETA
 
-If you're on linux, you should run [this](https://github.com/evi1haxor/scriptography/tree/master/WTA_v1.2.0/linuxBETA) script. Simply download the _linuxBETA_ directory and then open your terminal in that downloaded directory.
+If you're on linux, you should run [linux](https://github.com/evi1haxor/scriptography/tree/master/WTA_v2.0) script. Simply download the _linux<sub>version</sub>_ directory and then open your terminal in that downloaded directory.
 
 Now if you don't have default system settings for storing downloads, then you should specify the complete path (as illustrated below) where the downloads gets stored in your system. 
 
