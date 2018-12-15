@@ -3,9 +3,13 @@ This repo contains scripts written by me for my personal convenient usage. If pr
 
 ---
 
+---
+
 # push
 
 For know-hows about the script,  do `py push.py --help` until I make a separate reference for them.
+
+---
 
 ---
 
@@ -20,8 +24,6 @@ Well, that's what I call it. Couldn't come up with a better name. Anyways, this 
 For running it, you should have python3 and selenium installed and latest version of Chrome webdriver downloaded. 
 
 **Note that you got to change path to** `chromedrive.exe`  **and modify** `targets.py` **accordingly before executing the script.**
-
----
 
 ---
 
@@ -68,4 +70,8 @@ wta -p "THE\\PATH" -c *** -m "THE MESSAGE"
 
 - Replace `THE\\PATH` with the absolute path to `chromedriver.exe` 
 - **ProTip**: You should divide directories with `\\` while writing paths.
+
+---
+
+---
 
