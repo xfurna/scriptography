@@ -12,7 +12,7 @@ def modify(commit_message):
         if cmsg[e-1] == cmsg[e+1] == ' ' and cmsg[e] == 'M':
             cmsgn = cmsgn + cmsg[p:e] + list("Modified")
             p = e
-    commit_message = cmsgn
+    return str(cmsgn)
     
 
 p = argparse.ArgumentParser()
@@ -53,6 +53,6 @@ for a in t:
         a = ''
     cmsg += str(a)
 
-modify(cmsg)
+cmsg = modify(cmsg)
 
 subprocess.call("git commit -m " + "\"" + cmsg + "\"" + " && git push origin master", shell = True)
