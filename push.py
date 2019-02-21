@@ -12,7 +12,7 @@ def modify(commit_message):
         if cmsg[e-1] == cmsg[e+1] == ' ' and cmsg[e] == 'M':
             cmsgn = cmsgn + cmsg[p:e] + list("Modified")
             p = e
-
+    commit_message = cmsgn
     
 
 p = argparse.ArgumentParser()
