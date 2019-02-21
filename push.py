@@ -3,6 +3,18 @@ import subprocess
 import argparse
 import sys
 
+
+def modify(commit_message):
+    cmsg = list(commit_message)
+    cmsgn = []
+    p = 0
+    for e in range(0, len(cmsg) - 1):
+        if cmsg[e-1] == cmsg[e+1] == ' ' and cmsg[e] == 'M':
+            cmsgn = cmsgn + cmsg[p:e] + list("Modified")
+            p = e
+
+    
+
 p = argparse.ArgumentParser()
 
 if len(sys.argv) == 3:
@@ -41,5 +53,6 @@ for a in t:
         a = ''
     cmsg += str(a)
 
+modify(cmsg)
 
 subprocess.call("git commit -m " + "\"" + cmsg + "\"" + " && git push origin master", shell = True)
