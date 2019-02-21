@@ -63,5 +63,6 @@ for a in t:
         a = ''
     cmsg += str(a)
 
+
 cmsg = modify(cmsg)
 subprocess.call("git commit -m " + "\"" + cmsg + "\"" + " && git push origin master", shell = True)
