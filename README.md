@@ -7,6 +7,8 @@ This repo contains scripts written by me for my personal convenient usage. If pr
 
 # push
 
+>  [UNSTABLE AT THE MOMENT]
+
 this `push` script will do all boring runs for you so that you can focus on constructive works instead. 
 
 ## Setting up
@@ -26,7 +28,7 @@ positional arguments:
 
 optional arguments:
   -h, --help      show this help message and exit
-``` 
+```
 
 ---
 
