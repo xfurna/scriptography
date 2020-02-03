@@ -35,7 +35,7 @@ optional arguments:
 ---
 
 # WTA
-> Project migrated to https://github.com/evi1haxor/atm_wa
+> This project migrated to https://github.com/evi1haxor/atm_wa
 ---
 
 ---

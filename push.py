@@ -3,28 +3,6 @@ import subprocess
 import argparse
 import sys
 
-
-def stringified(cmsgn):
-    r = ""
-    for i in cmsgn: r += i
-    return r
-
-def modify(commit_message):
-    cmsg = list(commit_message)
-    cmsgn = []
-    p = 0
-    for e in range(0, len(cmsg) - 1):
-        if cmsg[e-1] == cmsg[e+1] == ' ' and e != 0:
-            if cmsg[e+1] == 'M':
-                cmsgn = cmsgn + cmsg[p:e] + list("Modified")
-                p = e
-                print(cmsg[e], cmsgn[e], e)
-        elif e == 0 and cmsg[e+1] == ' ':
-            if cmsg[0] == 'M':
-                cmsgn = list("Modified") + cmsg[1:]    
-    return stringified(cmsgn)
-    
-
 p = argparse.ArgumentParser()
 
 if len(sys.argv) == 3:
@@ -64,5 +42,4 @@ for a in t:
     cmsg += str(a)
 
 
-cmsg = modify(cmsg)
 subprocess.call("git commit -m " + "\"" + cmsg + "\"" + " && git push origin master", shell = True)
